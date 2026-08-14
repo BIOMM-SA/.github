@@ -32,11 +32,51 @@ público sem aprovação explícita.
 
 1. Criar uma branch a partir de `main` (ex: `feature/nome-da-mudanca`,
    `fix/nome-do-bug`)
-2. Commits pequenos e descritivos, em português, no imperativo
-   (ex: "Corrige loop infinito na parada do serviço dosvc")
+2. Commits seguindo o padrão de commits definido abaixo
 3. Abrir Pull Request para `main`, preenchendo o template
 4. Pelo menos **1 aprovação** obrigatória antes do merge
 5. Squash merge, mantendo o histórico limpo
+
+## Padrão de commits
+
+Seguimos **Conventional Commits**, em **inglês**:
+
+```
+<tipo>(<escopo opcional>): <descrição curta no imperativo>
+```
+
+**Tipos:**
+
+| Tipo | Uso |
+|---|---|
+| `feat` | Nova funcionalidade ou script |
+| `fix` | Correção de bug |
+| `docs` | Alteração só de documentação (README, CONTRIBUTING, etc.) |
+| `refactor` | Mudança de código sem alterar comportamento |
+| `perf` | Melhoria de performance |
+| `test` | Adição ou ajuste de testes |
+| `chore` | Tarefas de manutenção (dependências, config, build) |
+| `ci` | Mudanças em pipelines/CI |
+
+**Regras:**
+
+- Descrição curta no imperativo, sem ponto final (ex: `add`, não `added`
+  ou `adds`)
+- Escopo opcional entre parênteses indica o módulo/área afetada
+  (ex: `feat(rmm): add cleanup script for workstations`)
+- Corpo do commit (opcional, linha em branco depois do título) para
+  detalhar o "porquê" da mudança, quando não for óbvio
+- Referenciar o ticket GLPI no rodapé quando aplicável:
+  `Refs: GLPI-1520`
+
+**Exemplos:**
+
+```
+feat(rmm): add execution report script for cyber scripting plans
+fix(rmm): resolve infinite loop stopping dosvc service
+docs: update CONTRIBUTING with commit convention
+chore: bump powershell module version
+```
 
 ## Documentação obrigatória por repositório
 
