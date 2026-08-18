@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./assets/biomm-logo.png" alt="BIOMM S/A" width="140"/>
+  <img src="https://raw.githubusercontent.com/BIOMM-SA/.github/main/assets/biomm-logo.png" alt="BIOMM S/A" width="140"/>
 
   # BIOMM S/A · TI
 
